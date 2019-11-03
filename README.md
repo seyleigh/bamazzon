@@ -81,6 +81,7 @@ Finally - when the user has done everything they want they can select ``` Exit `
 
 When a user in the Customer view gets done buying something or trying to buy something but having insufficient stock - after it displays the final message, in order to get the prompt asking if you want to buy something else or not you have to press an arrow key to make it appear. If you just press enter it'll automatically select yes and run the start function again. I tried moving where ``` spree() ``` was called but that didn't change anything. Perhaps I just didn't move it to the right spot.
 
+I also tried to find a way to use chalk or gradient string on the table but it kept malfunctioning or just returned a bunch of objects.
 
 
 
