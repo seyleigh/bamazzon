@@ -1,0 +1,29 @@
+{
+  "name": "bamazzon",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "chalk-animation": "^1.6.0",
+    "figlet": "^1.2.4",
+    "gradient-string": "^1.2.0",
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1",
+    "pretty-error": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyleigh/bamazzon.git"
+  },
+  "author": "Jensey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seyleigh/bamazzon/issues"
+  },
+  "homepage": "https://github.com/seyleigh/bamazzon#readme"
+}
