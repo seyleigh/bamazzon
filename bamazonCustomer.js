@@ -1,6 +1,5 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-const chalk = require("chalk");
 const figlet = require("figlet");
 const chalkAnimation = require("chalk-animation");
 const gradient = require("gradient-string");
@@ -9,7 +8,7 @@ var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "whoops",
+    password: "", //insert user password
     database: "customer_db"
 });
 
@@ -33,7 +32,7 @@ connection.connect(function(err) {
     })
 
     console.log(
-        gradient.vice(title)
+        gradient.mind(title)
     );
 });
 
@@ -84,10 +83,9 @@ function start() {
                 ], function(err, results){
                     if (err) throw err;
                         chalkAnimation.rainbow(`Yay! Your total is ${total.toFixed(2)}. Inventory has beeen updated.`)
-                    
                 });
             } else {
-                    chalkAnimation.glitch(`Whoops! We dont have enough for you right now :(`)   
+                    chalkAnimation.glitch(`Whoops! We dont have enough for you right now :(`)  
             }
 
             spree();
